@@ -1,0 +1,46 @@
+/*
+
+WebGL Water
+
+http://madebyevan.com/webgl-water/
+
+I created http://madebyevan.com/webgl-water/ back in 2011 and I’ve always been meaning to explain how it works.
+
+The most interesting aspect of the demo in my opinion is my approach to rendering caustics.
+
+The term “caustic” refers to the pattern that light makes when it is reflected or refracted by a curved surface.
+
+This is normally beyond the reach of realtime graphics because the magnitude of the computation required is immense in the general case.
+
+ It’s very hard to tell what light has arrived at a given point if the light is arriving from many different directions.
+ 
+ The general approach is to bounce rays of light everywhere for a while and let them accumulate, 
+ 
+ then see where they have collected. 
+ 
+ This is known as path tracing. (http://madebyevan.com/webgl-path-tracing/)
+ 
+ Light that has been focused on a smaller area accumulates more and gets brighter 
+ 
+ (recall how a magnifying glass concentrates light into a bright spot) and light that has been spread out gets dimmer.
+ 
+ Path tracing isn’t specific to caustics; 
+ 
+ it’s a general solution for simulating how light behaves and for rendering realistic images.
+ 
+ There are some realtime methods that approximate this in certain cases 
+ 
+ but those rely on the fact that indirect illumination in diffuse environments usually changes slowly along a surface, 
+ 
+ in which case you can get away with sparse sampling.
+ 
+ This is not the case for caustics at all.
+  
+ Caustics create intricate light patterns with sharp creases 
+ 
+ that will be blurred and may even be lost completely when using these realtime approximations.
+ 
+ 
+// https://medium.com/@evanwallace/rendering-realtime-caustics-in-webgl-2a99a29a0b2c
+ 
+*/
