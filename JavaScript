@@ -1,0 +1,76 @@
+/*
+
+자바스크립트는 복잡한 무언가(주기적으로 내용이 갱신되는 기능이나 능동적인 지도, 변화하는 2D/3D 그래픽, 동영상 등)를 
+웹페이지에 적용할 수 있게 하는 스크립트 혹은 프로그래밍 언어다. 
+
+자바스크립트는 표준 웹 기술이라는 레이어 케이크에서 세번째 층이라고 볼 수 있다. 
+
+다른 두 층(HTML과 CSS)에 대한 보다 자세한 정보는 학습 영역의 다른 부분에서 찾아볼 수 있다. 
+
+★ 표준 웹 기술 = HTML + CSS + JavaScript
+
+위 3개의 요소들은 각각 유기적으로 잘 구성되어 있다.
+
+Application Programming Interface(APIs)라는 것은 자바스크립트 코드에 사용할 수 있는 추가적인 강력한 마법들을 제공한다. 
+
+API는 이미 만들어진 코드의 집합체라고 볼 수 있으며, 개발자들이 만들기 어렵고 힘든 부분을 쉽게 구현할 수 있도록 하는 프로그램이라고 볼 수 있다. 
+
+마치 가구를 만들 때 직접 디자인하고, 재료를 구하고, 재단하고, 못을 박고 하는 등 혼자서 모든 것을 하는 대신 가구 만들기 키트를 사는 것과 같다고 보면 된다. 
+
+일반적으로 두 종류로 구분된다. 
+
+
+1. Browser API
+Browser API는 웹 브라우저에 설치된 API들로 컴퓨터 환경구성으로부터 데이터를 보이게 하고 복잡한 일들을 하게 한다. 
+
+- DOM(Document Object Model)API는 동적으로 페이지의 스타일을 정하는 등 HTML과 CSS를 알맞게 조정하는 역할을 한다.
+  우리가 매일 보는 팝업창이나, 위의 사진과 같이 컨텐츠들이 보여지는 것들이 모두 DOM의 결과라고 볼 수 있다. 
+  
+- Geolocation API는 지리적인 정보를 검색하게 해준다. 이는 Google Maps 이 어떻게 위치를 찾고 지도에 표시하는지 알 수 있게 한다. 
+
+- Canvas와 WebGL API는 2D와 3D 그래픽을 만들 수 있도록 합니다. 이러한 웹 기술을 사용하여 다양하고 재미있는 것들을 지원한다. Chrome Experiments 와 webglsamples를 참조해보라. 
+
+  - - Chrome Experiments
+
+      https://experiments.withgoogle.com/search?q=WebGL
+
+  - -  webglsamples
+
+      http://webglsamples.org/
+
+※ 대부분의 데모 코드들은 오래된 브라우저에서는 실행이 안될 수 있으니, FireFox, Chrome, Edge, Opera와 같은 최신 브라우저를 사용하는 것을 추천한다. 
+
+실제 배포가 되는 코드처럼 여러 사용자가 사용할 수 있음을 고려하여 cross browser testing (여러 브라우저를 이용하여 테스트)를 해보는 것이 좋다. 
+
+
+2. Thrid party API
+
+Thrid party API는 브라우저에 기본적으로 설치된 API가 아닌 인터넷에서 개인적으로 정보와 코드를 얻어 프로그래밍한 것을 말한다. 
+
+예를 들어, Twitter API는 웹사이트에 가장 최근의 트윗을 보여주도록 한다. 
+
+Google Maps API와 OpenStreetMap API는 웹사이트에 원하는 지도를 넣어주고 추가기능을 지원한다. 
+
+※ 이러한 API들은 고급 과정이며, 이 API들에 대한 보다 자세한 정보는 'Client-side web APIs module'에서 살펴보라. 
+
+물론 이것말고도 엄청나게 다양한 API들이 존재한다. 
+
+
+<자바스크립트의 역할 >
+
+브라우저에서 웹페이지를 볼러올 때, 실행 환경(브라우저 탭)안에서 HTML, CSS, JavaScript 코드가 실행된다. 
+
+이는 마치 공장에서 원재료(코드)가 일련의 과정을 거쳐 제품(웹페이지)로 탄생하는 것과 같다. 
+
+자바스크립트는 HTML과 CSS가 결합되고 웹페이지 상에서 올려진 후, 브라우저의 자바스크립트 엔진에 의해 실행된다. 
+
+이는 페이지의 구조와 스타일 등을 정해놓고, 자바스크립트가 실행된다는 것과 같은 의미다. 
+
+동적으로 사용자 인터페이스를 업데이트하는 자바스크립트의 사용은 Document Object Model API를 통해 HTML과 CSS를 수정하는 것으로 좋은 현상이다. 
+
+ 만약 자바 스크립트가 HTML과 CSS 전에 실행되었다면 문제가 분명 발생할 것이다. 
+
+https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+
+
+*/
